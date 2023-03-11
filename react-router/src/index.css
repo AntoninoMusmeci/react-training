@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
   --primary: #bc4123;
@@ -35,11 +35,11 @@ header nav {
   margin: 0 auto;
 }
 header nav h1 {
-  margin-right:  auto;
+  margin-right: auto;
   border-bottom: 3px solid var(--primary);
 }
 
-header nav a{
+header nav a {
   text-decoration: none;
   padding: 6px;
   border-radius: 4px;
@@ -49,75 +49,96 @@ header nav a.active {
   background-color: var(--primary);
 }
 
-
 /* page content */
-
 
 /* help layout */
 
-.help-layout nav{
+.help-layout nav {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin: 30px 0;
 }
 
-.help-layout nav a{
+.help-layout nav a {
   padding: 10px;
   border: 2px solid white;
   border-radius: 4px;
   text-decoration: none;
 }
-.help-layout nav a:hover{
-  border-color: var(--primary)
+.help-layout nav a:hover {
+  border-color: var(--primary);
 }
-.help-layout a.active{
+.help-layout a.active {
   background-color: var(--primary);
 }
 
-form input, form label span , form textarea{
+form input,
+form label span,
+form textarea {
   display: block;
 }
-form input, form textarea {
+form input,
+form textarea {
   width: 300px;
   color: var(--secondary);
-  margin-bottom: 25px
+  margin-bottom: 25px;
 }
 
 /* faq */
 .faq .question {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* careers list */
 
 .careers > a {
   display: block;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 4px;
   margin: 20px 0;
   text-decoration: none;
 }
 .careers > a:hover p {
-  color: var(--primary)
+  color: var(--primary);
 }
 .careers > a p:last-child {
   font-size: 0.8em;
-  color: #bbb
+  color: #bbb;
 }
 .careers p {
-  margin: 0
+  margin: 0;
 }
-
 
 /* careers details */
 
 .careers-details {
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 4px;
   margin: 20px 0;
 }
 
 /* breadcrumbs */
+
+.breadcrumbs {
+  margin: 20px auto;
+}
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.breadcrumbs .crumb:after {
+  content: ">";
+  margin-left: 10px;
+}
+
+.breadcrumbs .crumb:last-child::after {
+  display: none;
+}
+
+.breadcrumbs .crumb a {
+  color: #ddd;
+}
