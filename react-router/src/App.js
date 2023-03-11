@@ -5,6 +5,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import { UserProvider } from "./context/userContext";
 // pages
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -12,14 +13,16 @@ import Faq from "./pages/help/Faq";
 import Contact, { contactAction } from "./pages/help/Contact";
 import Careers, { careersLoader } from "./pages/careers/Careers";
 import NotFound from "./pages/NotFound";
-//Layout
-import RootLayout from "./layout/RootLayout";
-import HelpLayout from "./layout/HelpLayout";
-import CareersLayout from "./layout/CareersLayout";
 import CarrearsDetails, {
   careerDetailsLoader,
 } from "./pages/careers/CarrearsDetails";
 import CareerError from "./pages/careers/CareerError";
+//Layout
+import RootLayout from "./layout/RootLayout";
+import HelpLayout from "./layout/HelpLayout";
+import CareersLayout from "./layout/CareersLayout";
+
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -64,8 +67,10 @@ function App() {
     //     </Routes>
     //   </main>
     // </BrowserRouter>
-
-    <RouterProvider router={router} />
+    <UserProvider>
+         <RouterProvider router={router} />
+    </UserProvider>
+ 
   );
 }
 

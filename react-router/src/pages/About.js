@@ -1,6 +1,12 @@
-import React from 'react'
-
+import { useUser } from '../context/userContext';
+import { Navigate } from 'react-router-dom'
 const About = () => {
+  const user = useUser();
+  console.log(user)
+  if (!user.name) {
+    
+    return <Navigate to ="/" />
+  }
   return (
     <div className="home">
     <h2>About Me</h2>
