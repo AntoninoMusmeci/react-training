@@ -91,6 +91,25 @@ form input, form textarea {
 
 /* careers list */
 
+.careers > a {
+  display: block;
+  background-color: rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+  text-decoration: none;
+}
+.careers > a:hover p {
+  color: var(--primary)
+}
+.careers > a p:last-child {
+  font-size: 0.8em;
+  color: #bbb
+}
+.careers p {
+  margin: 0
+}
+
 
 /* careers details */
 
