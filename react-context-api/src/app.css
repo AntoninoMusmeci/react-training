@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    border-bottom: 2px solid black;
+    padding: 10px;
+
+}
+
+
+button{
+    background-color: blueviolet;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navlink{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    
+}
